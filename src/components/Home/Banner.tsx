@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import { Flex, Heading, Image, Text, VStack, Box } from "@chakra-ui/react";
 
 export function Banner(): JSX.Element {
   return (
@@ -6,10 +6,10 @@ export function Banner(): JSX.Element {
       w="100%"
       align="center"
       justify="space-between"
-      bg="url(https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a) no-repeat right"
+      bg="url(/bgHome.svg) center"
       px="8.75rem"
     >
-      <VStack spacing="20px" mr="12.5rem">
+      <VStack spacing="20px" mr="12.5rem" maxW="1440px">
         <Heading
           fontWeight="500"
           fontSize="2.25rem"
