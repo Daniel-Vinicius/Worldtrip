@@ -13,7 +13,7 @@ import {
 
 export function Card() {
   return (
-    <Center>
+    <Center cursor="pointer">
       <Box maxW="270px" w="full" bg="white" rounded="md" overflow="hidden">
         <Image h="170px" w="full" src="/cities/london.svg" objectFit="cover" />
 
@@ -42,15 +42,16 @@ export function Card() {
 
 export function Cities(): JSX.Element {
   return (
-    <Flex w="100%" mt="5rem">
-      <Wrap
-        spacing="2.8rem"
-        align="center"
-        justify="center"
-        px="1rem"
-        py="1rem"
-        minW="22.5rem"
+    <Flex w="100%" mt="5rem" direction="column">
+      <Heading
+        fontWeight="500"
+        fontSize="2.25rem"
+        mb="2.5rem"
+        mx={["auto", "auto", "auto", "8.75rem"]}
       >
+        Cidades + 100
+      </Heading>
+      <Wrap spacing="2.8rem" align="center" justify="center" minW="22.5rem">
         <WrapItem>
           <Card />
         </WrapItem>

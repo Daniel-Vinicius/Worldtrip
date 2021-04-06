@@ -18,6 +18,19 @@ export const MyTheme = extendTheme({
   },
   styles: {
     global: {
+      ".swiper-pagination-bullet": {
+        bg: "text.info",
+        h: "1rem",
+        w: "1rem",
+      },
+      ".swiper-pagination-bullet-active": {
+        bg: "highlight.500",
+      },
+      ".swiper-button-prev, .swiper-button-next": {
+        color: "highlight.500",
+        w: "3.75rem",
+        h: "3.75rem",
+      },
       body: {
         bg: "text.white",
         color: "text.dark",

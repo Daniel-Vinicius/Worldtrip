@@ -9,18 +9,14 @@ import { Banner } from "../components/Continent/Banner";
 import { Details } from "../components/Continent/Details";
 import { Cities } from "../components/Continent/Cities";
 
-interface ContinentProps {
-  continent: string;
-}
-
-export default function Continent({ continent }: ContinentProps): JSX.Element {
+export default function Continent(): JSX.Element {
   return (
     <>
       <Head>
         <title>Worldtrip</title>
       </Head>
       <Flex direction="column" h="100vh" overflowX="hidden">
-        <Header backButton={true} />
+        <Header backButton />
         <Banner />
         <Flex w="100%" h="100%" maxWidth="8xl" mx="auto" direction="column">
           <Details />
@@ -48,7 +44,3 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     revalidate: 60 * 60 * 24, // 1 day
   };
 };
-
-{
-  /* <h1>{continent[0].toUpperCase() + continent.substr(1)}</h1> */
-}

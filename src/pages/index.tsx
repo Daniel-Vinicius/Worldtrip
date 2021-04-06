@@ -6,7 +6,7 @@ import { Header } from "../components/Header";
 import { Banner } from "../components/Home/Banner";
 import { TravelTypes } from "../components/Home/TravelTypes";
 import { Continent } from "../components/Home/Continent";
-import { Slider } from "../components/Home/Slider";
+import { Slider } from "../components/Home/Slider/Slider";
 
 export default function Home(): JSX.Element {
   return (
@@ -21,7 +21,7 @@ export default function Home(): JSX.Element {
           <TravelTypes />
           <Box borderTop="2px solid #47585B" mt="5rem" w="5.625rem" mx="auto" />
           <Continent />
-          {/* TODO  <Slider /> */}
+          <Slider />
         </Flex>
       </Flex>
     </>
