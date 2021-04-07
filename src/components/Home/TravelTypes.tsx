@@ -1,4 +1,4 @@
-import { Flex, Image, Text, HStack, ImageProps } from "@chakra-ui/react";
+import { Flex, Image, Text, Stack, ImageProps } from "@chakra-ui/react";
 
 interface TravelTypeProps extends ImageProps {
   travel: string;
@@ -24,13 +24,16 @@ function TravelType({ travel, ...rest }: TravelTypeProps): JSX.Element {
 export function TravelTypes(): JSX.Element {
   return (
     <Flex w="100%" align="center" justify="center" mt="5rem">
-      <HStack spacing="8.125rem">
+      <Stack
+        spacing="8.125rem"
+        direction={["column", "column", "column", "row"]}
+      >
         <TravelType travel="vida noturna" src="/travel/cocktail.svg" />
         <TravelType travel="praia" src="/travel/surf.svg" />
         <TravelType travel="moderno" src="/travel/building.svg" />
         <TravelType travel="clássico" src="/travel/museum.svg" />
         <TravelType travel="e mais..." src="/travel/earth.svg" />
-      </HStack>
+      </Stack>
     </Flex>
   );
 }

@@ -13,7 +13,7 @@ export function Slider() {
       maxW="77.5rem"
       mx="auto"
       mt="5rem"
-      pb="5rem"
+      pb={["2rem", "3rem", "3rem", "5rem"]}
       minH="28.125rem"
     >
       <Swiper

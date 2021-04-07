@@ -3,7 +3,7 @@ import { Flex, Heading } from "@chakra-ui/react";
 export function Continent(): JSX.Element {
   return (
     <Flex
-      w="50rem"
+      w={["100%", "100%", "100%", "50rem"]}
       mx="auto"
       align="center"
       justify="center"
@@ -12,17 +12,15 @@ export function Continent(): JSX.Element {
     >
       <Heading
         fontWeight="500"
-        fontSize="2.25rem"
+        fontSize={["1.5rem", "1.75rem", "1.75rem", "2.25rem"]}
         color="text.dark"
-        lineHeight="3.375rem"
       >
         Vamos nessa?
       </Heading>
       <Heading
         fontWeight="500"
-        fontSize="2.25rem"
+        fontSize={["1.25rem", "1.75rem", "1.75rem", "2.25rem"]}
         color="text.dark"
-        lineHeight="3.375rem"
       >
         Então escolha seu continente
       </Heading>

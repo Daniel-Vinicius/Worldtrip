@@ -47,7 +47,7 @@ export function Cities(): JSX.Element {
         fontWeight="500"
         fontSize="2.25rem"
         mb="2.5rem"
-        mx={["auto", "auto", "auto", "8.75rem"]}
+        mx={["auto", "auto", "auto", "auto", "auto", "8.75rem"]}
       >
         Cidades + 100
       </Heading>

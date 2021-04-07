@@ -1,15 +1,25 @@
-import { Flex, Heading, Image, Text, VStack, Box } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Image,
+  Text,
+  VStack,
+  useMediaQuery,
+} from "@chakra-ui/react";
 
 export function Banner(): JSX.Element {
+  const [isLargerThan1110] = useMediaQuery("(min-width: 1110px)");
+
   return (
     <Flex
       w="100%"
       align="center"
-      justify="space-between"
+      justify={["center", "center", "center", "space-between"]}
       bg="url(/bgHome.svg) center"
-      px="8.75rem"
+      px={["1rem", "1rem", "1rem", "8.75rem"]}
+      py={["1.75rem", "1.75rem", "1.75rem", "0"]}
     >
-      <VStack spacing="20px" mr="12.5rem" maxW="1440px">
+      <VStack spacing="20px" mr={["0", "0", "0", "12.5rem"]}>
         <Heading
           fontWeight="500"
           fontSize="2.25rem"
@@ -22,7 +32,7 @@ export function Banner(): JSX.Element {
           Chegou a hora de tirar do papel a viagem que você sempre sonhou.{" "}
         </Text>
       </VStack>
-      <Image src="/airplane.svg" />
+      {isLargerThan1110 && <Image src="/airplane.svg" />}
     </Flex>
   );
 }

@@ -16,8 +16,8 @@ export default function Home(): JSX.Element {
       </Head>
       <Flex direction="column" h="100vh">
         <Header />
-        <Banner />
         <Flex w="100%" h="100%" maxWidth="8xl" mx="auto" direction="column">
+          <Banner />
           <TravelTypes />
           <Box borderTop="2px solid #47585B" mt="5rem" w="5.625rem" mx="auto" />
           <Continent />
