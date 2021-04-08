@@ -6,7 +6,7 @@ import { continents } from "./Continents";
 
 import { Slide } from "./Slide";
 
-export function Slider() {
+export function Slider(): JSX.Element {
   return (
     <Flex
       w="100%"
@@ -14,7 +14,7 @@ export function Slider() {
       mx="auto"
       mt="5rem"
       pb={["2rem", "3rem", "3rem", "5rem"]}
-      minH="28.125rem"
+      minH={["15.625rem", "28.125rem"]}
     >
       <Swiper
         navigation

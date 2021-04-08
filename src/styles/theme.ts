@@ -31,6 +31,17 @@ export const MyTheme = extendTheme({
         w: "3.75rem",
         h: "3.75rem",
       },
+      "@media(max-width: 900px)": {
+        ".swiper-pagination-bullet": {
+          h: "0.5rem",
+          w: "0.5rem",
+        },
+        ".swiper-button-prev, .swiper-button-next": {
+          color: "highlight.500",
+          w: "2rem",
+          h: "2rem",
+        },
+      },
       body: {
         bg: "text.white",
         color: "text.dark",

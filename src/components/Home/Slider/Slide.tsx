@@ -30,10 +30,18 @@ export function Slide({
             cursor: "pointer",
           }}
         >
-          <Heading fontSize="3rem" fontWeight="700" color="text.white">
+          <Heading
+            fontSize={["1.5rem", "3rem"]}
+            fontWeight="700"
+            color="text.white"
+          >
             {name}
           </Heading>
-          <Heading fontSize="1.5rem" fontWeight="700" color="text.white">
+          <Heading
+            fontSize={["0.875rem", "1.5rem"]}
+            fontWeight="700"
+            color="text.white"
+          >
             {description}
           </Heading>
         </VStack>

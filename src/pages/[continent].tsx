@@ -9,11 +9,17 @@ import { Banner } from "../components/Continent/Banner";
 import { Details } from "../components/Continent/Details";
 import { Cities } from "../components/Continent/Cities";
 
-export default function Continent(): JSX.Element {
+interface ContinentProps {
+  continent: string;
+}
+
+export default function Continent({ continent }: ContinentProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>Worldtrip</title>
+        <title>
+          {continent[0].toUpperCase() + continent[0].substr(1)} | Worldtrip
+        </title>
       </Head>
       <Flex direction="column" h="100vh" overflowX="hidden">
         <Header backButton />

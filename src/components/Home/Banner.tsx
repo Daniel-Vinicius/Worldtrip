@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 
 export function Banner(): JSX.Element {
-  const [isLargerThan1110] = useMediaQuery("(min-width: 1110px)");
+  const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
 
   return (
     <Flex
@@ -32,7 +32,7 @@ export function Banner(): JSX.Element {
           Chegou a hora de tirar do papel a viagem que você sempre sonhou.{" "}
         </Text>
       </VStack>
-      {isLargerThan1110 && <Image src="/airplane.svg" />}
+      {isLargerThan900 && <Image src="/airplane.svg" />}
     </Flex>
   );
 }
