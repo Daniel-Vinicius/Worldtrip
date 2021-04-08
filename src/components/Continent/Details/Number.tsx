@@ -1,11 +1,11 @@
-import { Flex, Text, HStack, Tooltip, Icon, Box } from "@chakra-ui/react";
+import { Flex, Text, Tooltip, Icon, Box } from "@chakra-ui/react";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
 interface Number {
   tooltip?: string;
   data: {
-    number: string;
     name: string;
+    number: number;
   };
 }
 

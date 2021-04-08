@@ -2,18 +2,14 @@ import Link from "next/link";
 
 import { Flex, VStack, Heading } from "@chakra-ui/react";
 
+import { Continent } from "../../../types/homeInterface";
+
 interface SlideProps {
-  continent: {
-    id: number;
-    image: string;
-    name: string;
-    description: string;
-    slug: string;
-  };
+  continent: Continent;
 }
 
 export function Slide({
-  continent: { image, name, description, slug },
+  continent: { image, slug, name, short_description },
 }: SlideProps): JSX.Element {
   return (
     <Flex
@@ -42,7 +38,7 @@ export function Slide({
             fontWeight="700"
             color="text.white"
           >
-            {description}
+            {short_description}
           </Heading>
         </VStack>
       </Link>

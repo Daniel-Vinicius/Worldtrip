@@ -15,7 +15,7 @@ export function Banner(): JSX.Element {
       w="100%"
       align="center"
       justify={["center", "center", "center", "space-between"]}
-      bg="url(/bgHome.svg) center"
+      bg="url(/home/bgHome.svg) center"
       px={["1rem", "1rem", "1rem", "8.75rem"]}
       py={["1.75rem", "1.75rem", "1.75rem", "0"]}
     >
@@ -32,7 +32,7 @@ export function Banner(): JSX.Element {
           Chegou a hora de tirar do papel a viagem que você sempre sonhou.{" "}
         </Text>
       </VStack>
-      {isLargerThan900 && <Image src="/airplane.svg" />}
+      {isLargerThan900 && <Image src="/home/airplane.svg" />}
     </Flex>
   );
 }

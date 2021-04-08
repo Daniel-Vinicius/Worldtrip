@@ -9,24 +9,26 @@ import { Banner } from "../components/Continent/Banner";
 import { Details } from "../components/Continent/Details";
 import { Cities } from "../components/Continent/Cities";
 
+import { Continent as ContinentI } from "../types/homeInterface";
+
+import api from "../services/api";
+
 interface ContinentProps {
-  continent: string;
+  continent: ContinentI;
 }
 
 export default function Continent({ continent }: ContinentProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>
-          {continent[0].toUpperCase() + continent.substr(1)} | Worldtrip
-        </title>
+        <title>{continent.name} | Worldtrip</title>
       </Head>
       <Flex direction="column" h="100vh" overflowX="hidden">
         <Header backButton />
-        <Banner />
+        <Banner continent={continent} />
         <Flex w="100%" h="100%" maxWidth="8xl" mx="auto" direction="column">
-          <Details />
-          <Cities />
+          <Details continent={continent} />
+          <Cities continent={continent} />
         </Flex>
       </Flex>
     </>
@@ -41,7 +43,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { continent } = params;
+  const { continent: continentSlug } = params;
+  const { data } = await api.get<ContinentI[]>(`/continents`);
+
+  const continent = data.find((continent) => continent.slug === continentSlug);
 
   return {
     props: {

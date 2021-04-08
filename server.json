@@ -1,0 +1,148 @@
+{
+  "continents": [
+    {
+      "id": 1,
+      "name": "Europa",
+      "image": "https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3",
+      "short_description": "O continente mais antigo.",
+      "long_description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.",
+      "slug": "europe",
+      "countries": 50,
+      "languages": 24,
+      "cities": [
+        {
+          "name": "London",
+          "image": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/uk-circle-01.png",
+          "city_country": "Reino Unido"
+        },
+        {
+          "name": "Paris",
+          "image": "https://images.unsplash.com/photo-1557457898-61da8848d599",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/fr-circle-01.png",
+          "city_country": "France"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "América",
+      "image": "https://images.unsplash.com/photo-1554216564-3b2db87a49d1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "short_description": "O continente mais livre.",
+      "long_description": "América é o continente localizado no hemisfério ocidental e que se estende, no sentido norte-sul, desde o oceano Ártico até o cabo Horn, ao longo de cerca de 15 mil quilômetros. O seu extremo oriental insular encontra-se na Groenlândia, o Nordostrundingen, enquanto o ocidental localiza-se nas Aleutas.",
+      "slug": "america",
+      "countries": 36,
+      "languages": 1061,
+      "cities": [
+        {
+          "name": "New York",
+          "image": "https://images.unsplash.com/photo-1485738422979-f5c462d49f74",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/us-circle-01.png",
+          "city_country": "United States"
+        },
+        {
+          "name": "Rio de Janeiro",
+          "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/br-circle-01.png",
+          "city_country": "Brazil"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Ásia",
+      "image": "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f",
+      "short_description": "O maior continente.",
+      "long_description": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial.",
+      "slug": "asia",
+      "countries": 36,
+      "languages": 1061,
+      "cities": [
+        {
+          "name": "London",
+          "image": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/uk-circle-01.png",
+          "city_country": "United States"
+        },
+        {
+          "name": "France",
+          "image": "https://images.unsplash.com/photo-1557457898-61da8848d599",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/fr-circle-01.png",
+          "city_country": "United States"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "África",
+      "image": "https://images.unsplash.com/photo-1605891323102-f122146d86f7",
+      "short_description": "A savana africana.",
+      "long_description": "A África é o terceiro continente mais extenso com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra com cerca de um bilhão de pessoas, representando cerca de um sétimo da população mundial, e 54 países independentes.",
+      "slug": "africa",
+      "countries": 36,
+      "languages": 1061,
+      "cities": [
+        {
+          "name": "London",
+          "image": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/uk-circle-01.png",
+          "city_country": "United States"
+        },
+        {
+          "name": "France",
+          "image": "https://images.unsplash.com/photo-1557457898-61da8848d599",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/fr-circle-01.png",
+          "city_country": "United States"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Oceania",
+      "image": "https://images.unsplash.com/photo-1588001400947-6385aef4ab0e",
+      "short_description": "As ilhas desertas.",
+      "long_description": "Oceania ou Oceânia é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico. O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville.",
+      "slug": "oceania",
+      "countries": 36,
+      "languages": 1061,
+      "cities": [
+        {
+          "name": "London",
+          "image": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/uk-circle-01.png",
+          "city_country": "United States"
+        },
+        {
+          "name": "France",
+          "image": "https://images.unsplash.com/photo-1557457898-61da8848d599",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/fr-circle-01.png",
+          "city_country": "United States"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Antártida",
+      "image": "https://images.unsplash.com/photo-1567253522526-7aeee1982711",
+      "short_description": "O continente mais frio.",
+      "long_description": "Antártida, também denominada no Brasil por Antártica, é o mais meridional e o segundo menor dos continentes, com uma superfície de 14 milhões de quilômetros quadrados.",
+      "slug": "antartida",
+      "countries": 36,
+      "languages": 1061,
+      "cities": [
+        {
+          "name": "London",
+          "image": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/uk-circle-01.png",
+          "city_country": "United States"
+        },
+        {
+          "name": "France",
+          "image": "https://images.unsplash.com/photo-1557457898-61da8848d599",
+          "flag": "https://vectorflags.s3-us-west-2.amazonaws.com/flags/fr-circle-01.png",
+          "city_country": "United States"
+        }
+      ]
+    }
+  ]
+}

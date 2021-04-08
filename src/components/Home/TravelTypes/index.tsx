@@ -18,11 +18,27 @@ export function TravelTypes(): JSX.Element {
           align="center"
           justifyContent="center"
         >
-          <TravelType travel="vida noturna" src="/travel/cocktail.svg" mobile />
-          <TravelType travel="praia" src="/travel/surf.svg" mobile />
-          <TravelType travel="moderno" src="/travel/building.svg" mobile />
-          <TravelType travel="clássico" src="/travel/museum.svg" mobile />
-          <TravelType travel="e mais..." src="/travel/earth.svg" mobile />
+          <TravelType
+            travel="vida noturna"
+            src="/home/travel_types/cocktail.svg"
+            mobile
+          />
+          <TravelType travel="praia" src="/home/travel_types/surf.svg" mobile />
+          <TravelType
+            travel="moderno"
+            src="/home/travel_types/building.svg"
+            mobile
+          />
+          <TravelType
+            travel="clássico"
+            src="/home/travel_types/museum.svg"
+            mobile
+          />
+          <TravelType
+            travel="e mais..."
+            src="/home/travel_types/earth.svg"
+            mobile
+          />
         </List>
       </Flex>
     );
@@ -34,11 +50,14 @@ export function TravelTypes(): JSX.Element {
         spacing="8.125rem"
         direction={["column", "column", "column", "row"]}
       >
-        <TravelType travel="vida noturna" src="/travel/cocktail.svg" />
-        <TravelType travel="praia" src="/travel/surf.svg" />
-        <TravelType travel="moderno" src="/travel/building.svg" />
-        <TravelType travel="clássico" src="/travel/museum.svg" />
-        <TravelType travel="e mais..." src="/travel/earth.svg" />
+        <TravelType
+          travel="vida noturna"
+          src="/home/travel_types/cocktail.svg"
+        />
+        <TravelType travel="praia" src="/home/travel_types/surf.svg" />
+        <TravelType travel="moderno" src="/home/travel_types/building.svg" />
+        <TravelType travel="clássico" src="/home/travel_types/museum.svg" />
+        <TravelType travel="e mais..." src="/home/travel_types/earth.svg" />
       </Stack>
     </Flex>
   );

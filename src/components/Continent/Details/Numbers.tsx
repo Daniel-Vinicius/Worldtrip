@@ -2,7 +2,12 @@ import { HStack } from "@chakra-ui/react";
 
 import { Number } from "./Number";
 
-export function Numbers(): JSX.Element {
+import { Continent } from "../../../types/homeInterface";
+interface NumbersProps {
+  continent: Continent;
+}
+
+export function Numbers({ continent }: NumbersProps): JSX.Element {
   return (
     <HStack
       spacing="2.625rem"
@@ -15,23 +20,23 @@ export function Numbers(): JSX.Element {
       <Number
         data={{
           name: "países",
-          number: "50",
+          number: continent.countries,
         }}
       />
 
       <Number
         data={{
           name: "línguas",
-          number: "60",
+          number: continent.languages,
         }}
       />
 
       <Number
         data={{
           name: "cidades",
-          number: "+ 100",
+          number: continent.cities.length,
         }}
-        tooltip="127 Cidades para Conhecer!"
+        tooltip={`${continent.cities.length} Cidades para Conhecer!`}
       />
     </HStack>
   );

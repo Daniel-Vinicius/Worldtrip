@@ -2,11 +2,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Flex } from "@chakra-ui/react";
 
-import { continents } from "./Continents";
-
 import { Slide } from "./Slide";
 
-export function Slider(): JSX.Element {
+import { ContinentsResponse } from "../../../types/homeInterface";
+
+type SliderProps = ContinentsResponse;
+
+export function Slider({ continents }: SliderProps): JSX.Element {
   return (
     <Flex
       w="100%"

@@ -11,24 +11,32 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 
-export function Card() {
+import { Continent, City } from "../../types/homeInterface";
+
+interface CardProps {
+  city: City;
+}
+
+function Card({ city }: CardProps) {
   return (
     <Center cursor="pointer">
       <Box maxW="270px" w="full" bg="white" rounded="md" overflow="hidden">
-        <Image h="170px" w="full" src="/cities/london.svg" objectFit="cover" />
+        <Image h="170px" w="full" src={city.image} objectFit="cover" />
 
         <Box p={6}>
           <Stack spacing="1rem" align="flex-start" mb={5}>
             <Heading fontSize="1.25rem" fontWeight="600">
-              Londres
+              {city.name}
             </Heading>
-            <Text color={"gray.500"}>Reino Unido</Text>
+            <Text color={"gray.500"}>{city.city_country}</Text>
           </Stack>
           <Flex h="100%" justify="flex-end" align="center" mt="-4rem">
             <Avatar
               size="1.875rem"
-              src="/cities/flag.svg"
-              alt={"Countrie"}
+              maxH="1.875rem"
+              maxW="1.875rem"
+              src={city.flag}
+              alt={`country flag ${city.city_country}`}
               css={{
                 border: "2px solid white",
               }}
@@ -40,7 +48,13 @@ export function Card() {
   );
 }
 
-export function Cities(): JSX.Element {
+interface CitiesProps {
+  continent: Continent;
+}
+
+export function Cities({ continent }: CitiesProps): JSX.Element {
+  const cities = continent.cities;
+
   return (
     <Flex w="100%" mt="5rem" direction="column">
       <Heading
@@ -49,36 +63,14 @@ export function Cities(): JSX.Element {
         mb="2.5rem"
         mx={["1rem", "auto", "auto", "auto", "auto", "8.75rem"]}
       >
-        Cidades + 100
+        Cidades {cities.length}
       </Heading>
       <Wrap spacing="2.8rem" align="center" justify="center" minW="22.5rem">
-        <WrapItem>
-          <Card />
-        </WrapItem>
-        <WrapItem>
-          <Card />
-        </WrapItem>
-        <WrapItem>
-          <Card />
-        </WrapItem>
-        <WrapItem>
-          <Card />
-        </WrapItem>
-        <WrapItem>
-          <Card />
-        </WrapItem>
-        <WrapItem>
-          <Card />
-        </WrapItem>
-        <WrapItem>
-          <Card />
-        </WrapItem>
-        <WrapItem>
-          <Card />
-        </WrapItem>
-        <WrapItem>
-          <Card />
-        </WrapItem>
+        {cities.map((city) => (
+          <WrapItem key={city.name}>
+            <Card city={city} />
+          </WrapItem>
+        ))}
       </Wrap>
     </Flex>
   );
