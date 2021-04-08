@@ -18,7 +18,7 @@ export default function Continent({ continent }: ContinentProps): JSX.Element {
     <>
       <Head>
         <title>
-          {continent[0].toUpperCase() + continent[0].substr(1)} | Worldtrip
+          {continent[0].toUpperCase() + continent.substr(1)} | Worldtrip
         </title>
       </Head>
       <Flex direction="column" h="100vh" overflowX="hidden">

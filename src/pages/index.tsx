@@ -19,7 +19,12 @@ export default function Home(): JSX.Element {
         <Banner />
         <Flex w="100%" h="100%" maxWidth="8xl" mx="auto" direction="column">
           <TravelTypes />
-          <Box borderTop="2px solid #47585B" mt="5rem" w="5.625rem" mx="auto" />
+          <Box
+            borderTop="2px solid #47585B"
+            mt={["2.25rem", "5rem"]}
+            w="5.625rem"
+            mx="auto"
+          />
           <Continent />
           <Slider />
         </Flex>

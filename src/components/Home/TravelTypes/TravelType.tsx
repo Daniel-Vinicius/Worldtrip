@@ -26,9 +26,9 @@ export function TravelType({
           as={GiPlainCircle}
           color="highlight.500"
           size="0.5rem"
-          mb="2%"
+          mb="3%"
         />
-        <Text as="strong" fontWeight="600" fontSize="1.5rem">
+        <Text as="strong" fontWeight={["500", "600"]} fontSize="1.5rem">
           {travel}
         </Text>
       </ListItem>
