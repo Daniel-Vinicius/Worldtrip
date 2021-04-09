@@ -1,15 +1,22 @@
 import { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import { MyTheme } from "../styles/theme";
+import NextNProgress from "nextjs-progressbar";
 
-import SwiperCore, { Navigation, Pagination } from "swiper";
-
-SwiperCore.use([Navigation, Pagination]);
-import "swiper/swiper-bundle.css";
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/scrollbar/scrollbar.scss";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={MyTheme}>
+      <NextNProgress
+        color="#FFBA08"
+        startPosition={0.3}
+        stopDelayMs={200}
+        height={5}
+      />
       <Component {...pageProps} />
     </ChakraProvider>
   );

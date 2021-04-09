@@ -32,7 +32,13 @@ export function Banner(): JSX.Element {
           Chegou a hora de tirar do papel a viagem que você sempre sonhou.{" "}
         </Text>
       </VStack>
-      {isLargerThan900 && <Image src="/home/airplane.svg" />}
+      {isLargerThan900 && (
+        <Image
+          src="/home/airplane.svg"
+          alt="Avião amarelo voando com algumas nuvens ao redor."
+          transform="translateY(48px)"
+        />
+      )}
     </Flex>
   );
 }

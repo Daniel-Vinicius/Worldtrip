@@ -4,6 +4,16 @@ import { Flex } from "@chakra-ui/react";
 
 import { Slide } from "./Slide";
 
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper";
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+
 import { ContinentsResponse } from "../../../types/homeInterface";
 
 type SliderProps = ContinentsResponse;
@@ -20,10 +30,13 @@ export function Slider({ continents }: SliderProps): JSX.Element {
     >
       <Swiper
         navigation
-        pagination
+        pagination={{ clickable: true }}
         id="main"
         tag="section"
         slidesPerView={1}
+        autoplay={{
+          delay: 4000,
+        }}
         spaceBetween={0}
         style={{
           width: "100%",

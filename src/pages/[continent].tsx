@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/dist/client/router";
 import { GetStaticPaths, GetStaticProps } from "next";
 
 import { Flex } from "@chakra-ui/react";
@@ -8,6 +9,7 @@ import { Header } from "../components/Header";
 import { Banner } from "../components/Continent/Banner";
 import { Details } from "../components/Continent/Details";
 import { Cities } from "../components/Continent/Cities";
+import { Loading } from "../components/Continent/Loading";
 
 import { Continent as ContinentI } from "../types/homeInterface";
 
@@ -18,6 +20,12 @@ interface ContinentProps {
 }
 
 export default function Continent({ continent }: ContinentProps): JSX.Element {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <Loading />;
+  }
+
   return (
     <>
       <Head>
