@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "server": "json-server .mockend.json"
+    "server": "json-server db.json -p 3333"
   },
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
